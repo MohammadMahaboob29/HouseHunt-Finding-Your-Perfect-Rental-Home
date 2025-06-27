@@ -2,24 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './modules/common/Home.jsx';
-import Login from './modules/common/Login.jsx';
-import Register from './modules/common/Register.jsx';
-import ForgotPassword from './modules/common/ForgotPassword.jsx';
+import Home from './modules/Home.jsx';
+import Login from './modules/Login.jsx';
+import Register from './modules/Register.jsx';
+import ForgotPassword from './modules/ForgotPassword.jsx';
 
-import AdminHome from './modules/admin/AdminHome.jsx';
-import AllUsers from './modules/admin/AllUsers.jsx';
-import AllPropertiesAdmin from './modules/admin/AllProperties.jsx';
-import AllBookingsAdmin from './modules/admin/AllBookings.jsx';
+import AdminHome from './modules/AdminHome.jsx';
+import AllUsers from './modules/AllUsers.jsx';
+import AllPropertiesAdmin from './modules/AllProperties.jsx';
+import AllBookingsAdmin from './modules/AllBookings.jsx';
 
-import OwnerHome from './modules/owner/OwnerHome.jsx';
-import AddProperty from './modules/owner/AddProperty.jsx';
-import AllPropertiesOwner from './modules/owner/AllProperties.jsx';
-import AllBookingsOwner from './modules/owner/AllBookings.jsx';
+import OwnerHome from './modules/OwnerHome.jsx';
+import AddProperty from './modules/AddProperty.jsx';
+import AllPropertiesOwner from './modules/AllProperties.jsx';
+import AllBookingsOwner from './modules/AllBookings.jsx';
 
-import RenterHome from './modules/renter/RenterHome.jsx';
-import AllPropertiesRenter from './modules/renter/AllProperties.jsx';
-import RenterBookings from './modules/renter/RenterBookings.jsx';
+import RenterHome from './modules/RenterHome.jsx';
+import AllPropertiesRenter from './modules/AllProperties.jsx';
+import RenterBookings from './modules/RenterBookings.jsx';
 
 ReactDOM.render(
   <Router>
@@ -42,4 +42,4 @@ ReactDOM.render(
     </Routes>
   </Router>,
   document.getElementById('root')
-);
+); evi plaste chei
