@@ -2,13 +2,13 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { createContext, useEffect, useState } from "react";
 
 import "./App.css";
-import Home from "./modules/common/Home";
-import Login from "./modules/common/Login";
-import Register from "./modules/common/Register";
-import ForgotPassword from "./modules/common/ForgotPassword";
-import AdminHome from "./modules/admin/AdminHome";
-import OwnerHome from "./modules/user/owner/ OwnerHome";
-import RenterHome from "./modules/user/renter/RenterHome";
+import Home from "./modules/Home";
+import Login from "./modules/Login";
+import Register from "./modules/Register";
+import ForgotPassword from "./modules/ForgotPassword";
+import AdminHome from "./modules/AdminHome";
+import OwnerHome from "./modules/OwnerHome";
+import RenterHome from "./modules/RenterHome";
 
 export const UserContext = createContext();
 
