@@ -4,13 +4,13 @@ const cors = require('cors');
 require('dotenv').config(); // Load environment variables
 
 const bodyParser = require('body-parser');
-// const authMiddleware = require('./middlewares/authMiddleware');
-// const adminRoutes = require('./routes/adminRoutes');
-// const ownerRoutes = require('./routes/ownerRoutes');
-// const userRoutes = require('./routes/userRoutes');
+const authMiddleware = require('./authMiddleware');
+const adminRoutes = require('./adminRoutes');
+const ownerRoutes = require('./ownerRoutes');
+const userRoutes = require('./userRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 0; // Default to 5000 if not in .env
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -74,5 +74,5 @@ app.use('/api/user', authMiddleware, userRoutes);
 */
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(Server running on port ${PORT});
 });
